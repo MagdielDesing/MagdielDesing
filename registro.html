@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilos.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Julius+Sans+One&family=Montserrat+Alternates:wght@200;300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="head">
+        <div class="menu">
+            <ul class="nada">
+                <li class="logo">
+                    <img src="imagenes/Mag.0.png"></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="es.html">Sobre Mi</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="look">
+                    <input type="text" placeholder="Buscar...">
+                    <button class="boton"></button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="home">
+        <div class="home1 spe">
+            
+            </form>
+
+            <form action="#" name="registro2" onsubmit="return validarform2()">
+                <p class="spe2"> Registrándote acá:</p>
+                <p><input type="text" name="nmes" placeholder="Nombre" class="inputs"></p>
+                <p><input type="text" name="apes" placeholder="Apellidos" class="inputs"></p>
+                <p><input type="text" name="email" placeholder="Email" class="inputs"></p>
+                <p><input type="password" name="pass" placeholder="Contraseña" class="inputs"></p>
+                <p><input type="password" name="pass2" placeholder="Confirmar contraseña" class="inputs"></p>
+                <p><button type="submit" class="button">Enviar</button></p>
+            </form>
+        </div>
+
+    <script>
+
+        function validarform(){
+            var name = document.forms["registro"]["nom"].value;
+            if (name == ""){
+                alert('El campo nombre no tiene información, por favor colocar información valida.')
+                return false; 
+            }
+        
+            var name = document.forms["registro"]["ape"].value;
+            if (name == ""){
+                alert('El campo apellidos no tiene información, por favor colocar información valida.')
+                return false;          
+            }
+
+            var name = document.forms["registro"]["empr"].value;
+            if (name == ""){
+                alert('El campo empresa no tiene información, por favor colocar información valida.')
+                return false;
+            }
+
+            var name = document.forms["registro"]["mail"].value;
+            if (name == ""){
+                alert('El campo email no tiene información, por favor colocar información valida.')
+                return false;
+            }
+
+            var name = document.forms["registro"]["dire"].value;
+            if (name == ""){
+                alert('El campo dirección no tiene información, por favor colocar información valida.')
+                return false;
+            }
+        }   
+    </script>
+
+    <script>
+
+         function validarform2(){
+            var name = document.forms["registro2"]["nmes"].value;
+            if (name == ""){
+                alert('El campo nombre no tiene información, por favor colocar información valida.')
+                return false; 
+            }
+
+            var name = document.forms["registro2"]["apes"].value;
+            if (name == ""){
+                alert('El campo apellidos no tiene información, por favor colocar información valida.')
+                return false; 
+            }
+
+            var name = document.forms["registro2"]["email"].value;
+            if (name == ""){
+                alert('El campo email no tiene información, por favor colocar información valida.')
+                return false; 
+            }
+
+            var name_pass = document.forms["registro2"]["pass"].value;
+            if (name_pass == ""){
+                alert('El campo contraseña no tiene información, por favor colocar información valida.')
+                return false; 
+            }
+
+            var name_pass2 = document.forms["registro2"]["pass2"].value;
+            if (name_pass2 == ""){
+                alert('Por favor, confirme la contraseña.')
+                return false; 
+            }
+
+            function pass_confrim(){
+                if (name_pass2 != name_pass){
+                alert('Las contraseñas no coinciden, por favor intente de nuevo.')
+                return false;}
+            }
+
+            pass_confrim();
+         }
+
+    </script>
+
+
+
+    <div class="home">
+        <div class="home1 spe">
+            <p class="spe2">Si quieres empezar un nuevo proyecto, completa estas informaciones y te haré llegar un correo.</p>
+            <p><input type="text" name="" placeholder="Nombre" class="inputs"></p>
+            <p><input type="text" name="" placeholder="Apellidos" class="inputs"></p>
+            <p><input type="text" name="" placeholder="Empresa" class="inputs"></p>
+            <p><input type="text" name="" placeholder="Email" class="inputs"></p>
+            <p><input type="text" name="" placeholder="Dirección" class="inputs"></p>
+            <p><button class="button">Enviar</button></p>
+        </div>
+        <img src="imagenes/Mag.0.1.png">
+    </div>
+    <a name="reserva">
+        <div class="conten2">
+            <div class="form">
+                <h2>Reserva tu trabajo por adelantado y elije que tipo de trabajo quieres.</h2>
+
+                <p>Completa el siguente formulario para comenzar a trabajar con nuestra compañia...</p>
+                <hr>
+
+                <form name="registro" action="#" class="forms">
+                    Tipo de trabajo:
+                    <select name="destino" required>
+                        <option value="1">...</option>
+                        <option value="2">Ilustracion</option>
+                        <option value="3">Flyers</option>
+                        <option value="4">Logo</option>
+                        <option value="5">Edicion de videos</option>
+                        <option value="6">Edicion de Fotos</option>
+                        <option value="7">Seccion de fotografia</option>
+                        <option value="8">Banners</option>
+                        <option value="9">Modelados 3D</option>
+                    </select>
+                    Fecha de encargo: <input type="date" name="entrada">
+                    Fecha de entrega:<input type="date" name="salida">
+                    
+
+                    Reservar Premium: <select name="room">
+                        <option value="">2 Dias de entrega, 3 Dias de entrega</option>
+                    </select>
+
+                    <p> Información de contacto.</p>
+
+                    <input type="text" name="contacto" placeholder="Nombre de contacto">
+                    <input type="number" min="1" max="999999999999" name="tel" id="numero" placeholder="Teléfono">
+                    <input type="text" name="correo" placeholder="Correo electrónico">
+
+
+                    <p>Seleccione metodo de pago.</p>
+
+
+                    <input type="radio" name="hola1" id="targeta" value="1"> Targeta:
+                    <input type="text" name="targetaN" id="TN" placeholder="Numero de targeta">
+                    <select name="mes" id="meses">
+                        <option value="">Mes</option>
+                        <option value="">Enero</option>
+                        <option value="">Febrero</option>
+                        <option value="">Marzo</option>
+                        <option value="">Abril</option>
+                        <option value="">Mayo</option>
+                        <option value="">Junio</option>
+                        <option value="">Julio</option>
+                        <option value="">Agosto</option>
+                        <option value="">Septiembre</option>
+                        <option value="">Octubre</option>
+                        <option value="">Noviembre</option>
+                        <option value="">Diciembre</option>
+                    </select>
+                    Fecha de caducidad:
+                    <select name="año" id="años">
+                        <option value="">Año</option>
+                        <option value="">2020</option>
+                        <option value="">2021</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                        <option value="">2024</option>
+                        <option value="">2025</option>
+                        <option value="">2026</option>
+                        <option value="">2027</option>
+                        <option value="">2028</option>
+                        <option value="">2029</option>
+                        <option value="">2030</option>
+                        <option value="">2031</option>
+                        <option value="">2032</option>
+                        <option value="">2033</option>
+                        <option value="">2034</option>
+                        <option value="">2035</option>
+                    </select>
+                    <input type="text" name="cvv" placeholder="cvv/cvc">
+                    <input type="radio" name="hola1" id="targeta2" value="2">PayPal
+                    <div class="forms-c">
+                        <button type="submit" name="registrarse" id="enviar" onclick="return validarform()">Hacer
+                            Reserva</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </a>
+
+    <div class="end">
+        <div class="margen row">
+            <div class="columna">
+                <img class='logo2' src="imagenes/Mag.0.Whitepng.png" alt="">
+            </div>
+
+            <div class="columna">
+                <div class="line"></div>
+                <p class="columna-conten"><a href="index.html">Inicio</a></p>
+                <p class="columna-conten"><a href="galeria.html">Galeria</a></p>
+                <p class="columna-conten"><a href="us.html">Sobre Mi</a></p>
+                <p class="columna-conten"><a href="#">Contacto</a></p>
+            </div>
+
+            <div class="columna">
+                <p><a href="https://www.instagram.com/magdiel.raw/"><img src="imagenes/insta.png" alt="" class="icon"></a>
+                </p>
+                <p><a href="https://m.facebook.com/magdiel.lunabautista?ref=bookmarks"><img src="imagenes/face.png" alt="" class="icon"></a></p>
+            </div>
+        </div>
+    </div>
+     
+</body>
+
+</html>
